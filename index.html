@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Momo Project</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+
+  <link rel="preload" href="assets/style.css" as="style">
+  <link rel="preload" href="https://fonts.googleapis.com/css?family=Roboto:400,500" as="style">
+  <link rel="preload" href="assets/index.js" as="script">
+  <link rel="preload" href="assets/update.js" as="script">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500">
+  <link rel="stylesheet" href="assets/style.css">
+
+</head>
+
+<body>
+  <header id="header">
+    <a id="menu" class="gray" href="#open"><svg><use xlink:href="assets/icons.svg#menu"></use></svg></a>
+    <div id="title">Momo Project</div>
+    <div id="open" class="drawer">
+      <div id="nav-header"><svg><use xlink:href="assets/icons.svg#peach"></use></svg></div>
+			<div class="navigation">
+				<svg><use xlink:href="assets/icons.svg#wallet"></use></svg>Wallet
+				<div id="fx-d" class="accent">$ <span id="money">0.00</span></div>
+        <div id="fx-c">
+          <div id="b-1"><div id="b-2"></div></div>
+					<div id="fx-e"><span id="vot">100000</span> votes remaining</div>
+        </div>
+      </div>
+      <hr>
+      <div class="navigation">
+        <nav>
+          <a href="#"><svg><use xlink:href="assets/icons.svg#bonus"></use></svg>Giveaway</a>
+          <a class="accent v1" href="#"><svg><use xlink:href="assets/icons.svg#trending"></use></svg>Featured</a>
+          <a href="#"><svg><use xlink:href="assets/icons.svg#ranking"></use></svg>Leaderboard</a>
+          <a href="#"><svg><use xlink:href="assets/icons.svg#newsboard"></use></svg>Announcements</a>
+          <a href="#"><svg><use xlink:href="assets/icons.svg#info"></use></svg>Help</a>
+        </nav>
+      </div>
+      <hr>
+      <div class="center">
+        <a href="https://facebook.com/MomoProj" class="bt-i v2 fx-b" href="#"><svg><use xlink:href="assets/icons.svg#fb"></use></svg></a>
+        <a href="https://twitter.com/MomoProj" class="bt-i v2 fx-b" href="#"><svg><use xlink:href="assets/icons.svg#tw"></use></svg></a>
+        <a href="https://github.com/momoproject/momoproject.github.io" class="bt-i v2 fx-b" href="#"><svg><use xlink:href="assets/icons.svg#gh"></use></svg></a>
+			</div>
+			
+    </div>
+    <a id="overlay" href="#close"></a>
+
+  </header>
+
+    <div class="center">
+			
+			<noscript> <div id="no-js"></div> </noscript>
+      
+      <div id="content">
+
+        <main>
+        	<div id="featured"></div>
+        </main>
+				
+			<footer id="footer"> &#169; 2018 - Momo Project. All rights reserved.</footer>
+				
+      </div>
+
+    </div>
+	
+	
+
+  <script src="assets/update.js"></script>
+  <script src="assets/index.js"></script>
+	
+	<script>
+	
+	var text = "";
+	var i;
+
+	for (i = 0; i < 12; i++) { text +=
+
+	"<div class=\"card norm\">" + "<img src=\"" + rank[i][2] + "\" width=\"300px\" height=\"225px\">" +
+  	"<h2>" + rank[i][1] + "</h2>" + "<p>" + rank[i][4] + "</p>"  +
+  	"<hr>" +
+  	"<a class=\"bt-n act v1\" href=\"" + rank[i][3] + "\">READ MORE</a> " +
+		"<div class=\"fix\">" +
+			"<a class=\"bt-i act v2\" href=\"" + rank[i][3] + "\"><svg><use xlink:href=\"assets/icons.svg#heart\"></use></svg></a> " +
+  		"<b>" + rank[i][0] + "</b>" +
+		"</div>" +
+	"</div>"
+ }
+
+	document.getElementById('featured').innerHTML = text;
+										 
+	</script>
+
+  <script>svg4everybody();</script>
+
+</body>
+
+</html>
