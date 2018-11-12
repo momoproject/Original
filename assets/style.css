@@ -66,10 +66,9 @@ svg {
   height: 50px;
   min-width: 320px;
   background-color: #fff;
-  box-shadow: rgba(0, 0, 0, 0.26) 0px 2px 5px;
-  z-index: 10; }
+  box-shadow: rgba(0, 0, 0, 0.26) 0px 2px 5px; }
 
-/* line 46, C:/Users/Kaho/Desktop/Momo Project/Momo Project - Original/assets/style.scss */
+/* line 45, C:/Users/Kaho/Desktop/Momo Project/Momo Project - Original/assets/style.scss */
 #menu {
   position: absolute;
   top: 7px;
@@ -78,13 +77,13 @@ svg {
   height: 36px;
   border-radius: 50%;
   text-align: center; }
-  /* line 55, C:/Users/Kaho/Desktop/Momo Project/Momo Project - Original/assets/style.scss */
+  /* line 54, C:/Users/Kaho/Desktop/Momo Project/Momo Project - Original/assets/style.scss */
   #menu > svg {
     width: 24px;
     height: 24px;
     vertical-align: -16px; }
 
-/* line 58, C:/Users/Kaho/Desktop/Momo Project/Momo Project - Original/assets/style.scss */
+/* line 57, C:/Users/Kaho/Desktop/Momo Project/Momo Project - Original/assets/style.scss */
 #title {
   font-size: 18px;
   line-height: 51px;
@@ -92,70 +91,69 @@ svg {
   transition: transform .3s ease-out;
   color: #212121; }
 
-/* line 66, C:/Users/Kaho/Desktop/Momo Project/Momo Project - Original/assets/style.scss */
+/* line 65, C:/Users/Kaho/Desktop/Momo Project/Momo Project - Original/assets/style.scss */
 .drawer {
   font-weight: 500;
   width: 264px;
-  height: 100%;
+  height: 640px;
   background-color: #fff;
   transform: translateX(-280px);
   transition: transform .3s ease-out;
   box-shadow: rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.2) 0px 3px 1px -2px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px;
-  overflow-y: auto;
-  z-index: 5; }
+  overflow-y: auto; }
 
-/* line 80, C:/Users/Kaho/Desktop/Momo Project/Momo Project - Original/assets/style.scss */
+/* line 78, C:/Users/Kaho/Desktop/Momo Project/Momo Project - Original/assets/style.scss */
 .drawer:target {
   transform: translateX(0);
   transition: transform 0.5s cubic-bezier(0, 0, 0.2, 1); }
 
-/* line 81, C:/Users/Kaho/Desktop/Momo Project/Momo Project - Original/assets/style.scss */
+/* line 79, C:/Users/Kaho/Desktop/Momo Project/Momo Project - Original/assets/style.scss */
 .drawer:target ~ #overlay {
   visibility: visible;
   opacity: 0.7;
   transform: translateX(264px); }
 
-/* line 83, C:/Users/Kaho/Desktop/Momo Project/Momo Project - Original/assets/style.scss */
+/* line 81, C:/Users/Kaho/Desktop/Momo Project/Momo Project - Original/assets/style.scss */
 #nav-header {
   padding: 28px 0 6px 0;
   margin-bottom: 20px;
   background-color: rgba(244, 67, 54, 0.3);
   background-image: linear-gradient(315deg, #fc5296 0, #f67062 74%); }
-  /* line 89, C:/Users/Kaho/Desktop/Momo Project/Momo Project - Original/assets/style.scss */
+  /* line 87, C:/Users/Kaho/Desktop/Momo Project/Momo Project - Original/assets/style.scss */
   #nav-header > svg {
     width: 100%;
     height: 112px;
     fill: #fff; }
 
-/* line 92, C:/Users/Kaho/Desktop/Momo Project/Momo Project - Original/assets/style.scss */
+/* line 90, C:/Users/Kaho/Desktop/Momo Project/Momo Project - Original/assets/style.scss */
 .navigation {
   margin-right: 24px;
   color: #6e6e6e; }
-  /* line 93, C:/Users/Kaho/Desktop/Momo Project/Momo Project - Original/assets/style.scss */
+  /* line 91, C:/Users/Kaho/Desktop/Momo Project/Momo Project - Original/assets/style.scss */
   .navigation svg {
     width: 24px;
     height: 24px;
     margin: -7px 24px; }
 
-/* line 97, C:/Users/Kaho/Desktop/Momo Project/Momo Project - Original/assets/style.scss */
+/* line 95, C:/Users/Kaho/Desktop/Momo Project/Momo Project - Original/assets/style.scss */
 nav {
   margin: 12px 0; }
 
-/* line 99, C:/Users/Kaho/Desktop/Momo Project/Momo Project - Original/assets/style.scss */
+/* line 97, C:/Users/Kaho/Desktop/Momo Project/Momo Project - Original/assets/style.scss */
 nav > a {
   display: block;
   padding: 14px 0;
   text-decoration: none;
   border-radius: 0 24px 24px 0;
   transition: background-color .2s; }
-  /* line 107, C:/Users/Kaho/Desktop/Momo Project/Momo Project - Original/assets/style.scss */
+  /* line 105, C:/Users/Kaho/Desktop/Momo Project/Momo Project - Original/assets/style.scss */
   nav > a:hover {
     background-color: #f0f0f0; }
-  /* line 108, C:/Users/Kaho/Desktop/Momo Project/Momo Project - Original/assets/style.scss */
+  /* line 106, C:/Users/Kaho/Desktop/Momo Project/Momo Project - Original/assets/style.scss */
   nav > a:active {
     background-color: #d7d7d7; }
 
-/* line 111, C:/Users/Kaho/Desktop/Momo Project/Momo Project - Original/assets/style.scss */
+/* line 109, C:/Users/Kaho/Desktop/Momo Project/Momo Project - Original/assets/style.scss */
 #overlay {
   left: -16px;
   height: 100%;
@@ -165,16 +163,18 @@ nav > a {
   transition: visibility 0.2s, opacity 0.2s ease-out, transform 0.5s cubic-bezier(0, 0, 0.2, 1);
   cursor: default; }
 
-/* line 121, C:/Users/Kaho/Desktop/Momo Project/Momo Project - Original/assets/style.scss */
+/* line 119, C:/Users/Kaho/Desktop/Momo Project/Momo Project - Original/assets/style.scss */
 .center {
   text-align: center; }
 
-/* line 123, C:/Users/Kaho/Desktop/Momo Project/Momo Project - Original/assets/style.scss */
+/* line 121, C:/Users/Kaho/Desktop/Momo Project/Momo Project - Original/assets/style.scss */
 #content {
+  position: relative;
   display: inline-block;
   transition: transform .3s;
   width: 320px;
-  font-size: 0; }
+  font-size: 0;
+  z-index: -1; }
 
 /* line 130, C:/Users/Kaho/Desktop/Momo Project/Momo Project - Original/assets/style.scss */
 #footer {
